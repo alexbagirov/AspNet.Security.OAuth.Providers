@@ -51,8 +51,7 @@ namespace AspNet.Security.OAuth.Mixcloud
 
             if (Options.UsePkce)
             {
-                var bytes = new byte[32];
-                RandomNumberGenerator.Fill(bytes);
+                var bytes = RandomNumberGenerator.GetBytes(32);
                 var codeVerifier = Base64UrlTextEncoder.Encode(bytes);
 
                 // Store this for use during the code redemption.

@@ -121,8 +121,7 @@ namespace AspNet.Security.OAuth.Deezer
 
             if (Options.UsePkce)
             {
-                byte[] bytes = new byte[32];
-                RandomNumberGenerator.Fill(bytes);
+                byte[] bytes = RandomNumberGenerator.GetBytes(32);
                 string codeVerifier = Microsoft.AspNetCore.WebUtilities.Base64UrlTextEncoder.Encode(bytes);
 
                 // Store this for use during the code redemption.
