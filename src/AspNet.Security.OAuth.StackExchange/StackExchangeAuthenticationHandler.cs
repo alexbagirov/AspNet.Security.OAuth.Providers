@@ -116,15 +116,14 @@ namespace AspNet.Security.OAuth.StackExchange
             // Since OAuthTokenResponse expects a JSON payload, a response is manually created using the returned values.
             var content = QueryHelpers.ParseQuery(await response.Content.ReadAsStringAsync(Context.RequestAborted));
 
-            var node = new JsonObject();
+            var token = new JsonObject();
 
             foreach ((string key, StringValues value) in content)
             {
-                node[key] = value.ToString();
+                token[key] = value.ToString();
             }
 
-            var copy = JsonDocument.Parse(node.ToJsonString());
-            return OAuthTokenResponse.Success(copy);
+            return OAuthTokenResponse.Success(JsonSerializer.SerializeToDocument(token));
         }
     }
 }

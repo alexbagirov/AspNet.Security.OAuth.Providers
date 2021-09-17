@@ -11,7 +11,6 @@ using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Text.Json;
-using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Authentication;
@@ -97,16 +96,15 @@ namespace AspNet.Security.OAuth.Yammer
             using var payload = JsonDocument.Parse(await response.Content.ReadAsStringAsync(Context.RequestAborted));
             string? accessToken = payload.RootElement.GetProperty("access_token").GetString("token");
 
-            var node = new JsonObject()
+            var token = new
             {
-                ["access_token"] = accessToken,
-                ["token_type"] = string.Empty,
-                ["refresh_token"] = string.Empty,
-                ["expires_in"] = string.Empty,
+                access_token = accessToken,
+                token_type = string.Empty,
+                refresh_token = string.Empty,
+                expires_in = string.Empty,
             };
 
-            var token = JsonDocument.Parse(node.ToJsonString());
-            return OAuthTokenResponse.Success(token);
+            return OAuthTokenResponse.Success(JsonSerializer.SerializeToDocument(token));
         }
     }
 }
