@@ -96,7 +96,7 @@ namespace AspNet.Security.OAuth.Apple
             if (Options.ValidateTokens)
             {
                 var validateIdContext = new AppleValidateIdTokenContext(Context, Scheme, Options, idToken);
-                await Options.Events.ValidateIdToken(validateIdContext);
+                await Events.ValidateIdToken(validateIdContext);
             }
 
             var tokenClaims = ExtractClaimsFromToken(idToken);
@@ -111,7 +111,7 @@ namespace AspNet.Security.OAuth.Apple
             var context = new OAuthCreatingTicketContext(principal, properties, Context, Scheme, Options, Backchannel, tokens, tokens.Response.RootElement);
             context.RunClaimActions();
 
-            await Options.Events.CreatingTicket(context);
+            await Events.CreatingTicket(context);
             return new AuthenticationTicket(context.Principal!, context.Properties, Scheme.Name);
         }
 
