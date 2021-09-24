@@ -204,7 +204,7 @@ namespace AspNet.Security.OAuth
                     if (options is AppleAuthenticationOptions appleOptions)
                     {
                         appleOptions.EventsType = typeof(CustomAppleAuthenticationEvents);
-                        appleOptions.JwtSecurityTokenHandler = new FrozenJwtSecurityTokenHandler();
+                        appleOptions.TokenValidationParameters.ValidateLifetime = false;
                     }
                     else
                     {
