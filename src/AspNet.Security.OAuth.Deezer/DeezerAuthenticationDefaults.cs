@@ -22,31 +22,31 @@ namespace AspNet.Security.OAuth.Deezer
         /// <summary>
         /// Default value for <see cref="AuthenticationScheme.DisplayName"/>.
         /// </summary>
-        public const string DisplayName = "Deezer";
+        public static readonly string DisplayName = "Deezer";
 
         /// <summary>
         /// Default value for <see cref="AuthenticationSchemeOptions.ClaimsIssuer"/>.
         /// </summary>
-        public const string Issuer = "Deezer";
+        public static readonly string Issuer = "Deezer";
 
         /// <summary>
         /// Default value for <see cref="RemoteAuthenticationOptions.CallbackPath"/>.
         /// </summary>
-        public const string CallbackPath = "/signin-deezer";
+        public static readonly string CallbackPath = "/signin-deezer";
 
         /// <summary>
         /// Default value for <see cref="OAuthOptions.AuthorizationEndpoint"/>.
         /// </summary>
-        public const string AuthorizationEndpoint = "https://connect.deezer.com/oauth/auth.php";
+        public static readonly string AuthorizationEndpoint = "https://connect.deezer.com/oauth/auth.php";
 
         /// <summary>
         /// Default value for <see cref="OAuthOptions.TokenEndpoint"/>.
         /// </summary>
-        public const string TokenEndpoint = "https://connect.deezer.com/oauth/access_token.php";
+        public static readonly string TokenEndpoint = "https://connect.deezer.com/oauth/access_token.php";
 
         /// <summary>
         /// Default value for <see cref="OAuthOptions.UserInformationEndpoint"/>.
         /// </summary>
-        public const string UserInformationEndpoint = "https://api.deezer.com/user/me";
+        public static readonly string UserInformationEndpoint = "https://api.deezer.com/user/me";
     }
 }

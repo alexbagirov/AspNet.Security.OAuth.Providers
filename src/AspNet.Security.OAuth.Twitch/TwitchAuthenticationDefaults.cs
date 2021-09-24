@@ -22,31 +22,31 @@ namespace AspNet.Security.OAuth.Twitch
         /// <summary>
         /// Default value for <see cref="AuthenticationScheme.DisplayName"/>.
         /// </summary>
-        public const string DisplayName = "Twitch";
+        public static readonly string DisplayName = "Twitch";
 
         /// <summary>
         /// Default value for <see cref="AuthenticationSchemeOptions.ClaimsIssuer"/>.
         /// </summary>
-        public const string Issuer = "Twitch";
+        public static readonly string Issuer = "Twitch";
 
         /// <summary>
         /// Default value for <see cref="RemoteAuthenticationOptions.CallbackPath"/>.
         /// </summary>
-        public const string CallbackPath = "/signin-twitch";
+        public static readonly string CallbackPath = "/signin-twitch";
 
         /// <summary>
         /// Default value for <see cref="OAuthOptions.AuthorizationEndpoint"/>.
         /// </summary>
-        public const string AuthorizationEndPoint = "https://id.twitch.tv/oauth2/authorize";
+        public static readonly string AuthorizationEndPoint = "https://id.twitch.tv/oauth2/authorize";
 
         /// <summary>
         /// Default value for <see cref="OAuthOptions.TokenEndpoint"/>.
         /// </summary>
-        public const string TokenEndpoint = "https://id.twitch.tv/oauth2/token";
+        public static readonly string TokenEndpoint = "https://id.twitch.tv/oauth2/token";
 
         /// <summary>
         /// Default value for <see cref="OAuthOptions.UserInformationEndpoint"/>.
         /// </summary>
-        public const string UserInformationEndpoint = "https://api.twitch.tv/helix/users/";
+        public static readonly string UserInformationEndpoint = "https://api.twitch.tv/helix/users/";
     }
 }
