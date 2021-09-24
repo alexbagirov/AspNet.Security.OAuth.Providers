@@ -63,6 +63,12 @@
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <EnablePackageValidation>$(IsPackable)</EnablePackageValidation>
+    <!-- TODO Remove suppression once 6.0.0 is released. -->
+    <NoWarn>$(NoWarn);PKV006</NoWarn>
+  </PropertyGroup>
+
   <ItemGroup>
     <AdditionalFiles Include="$(MSBuildThisFileDirectory)stylecop.json" Link="stylecop.json" />
     <PackageReference Include="StyleCop.Analyzers" PrivateAssets="All" />

@@ -5,6 +5,8 @@
     <MinorVersion>0</MinorVersion>
     <PatchVersion>0</PatchVersion>
     <VersionPrefix>$(MajorVersion).$(MinorVersion).$(PatchVersion)</VersionPrefix>
+    <!-- TODO Baseline to 6.0.0 once released -->
+    <PackageValidationBaselineVersion>5.0.12</PackageValidationBaselineVersion>
     <PreReleaseVersionLabel>rc.1</PreReleaseVersionLabel>
     <PreReleaseVersionIteration></PreReleaseVersionIteration>
     <PreReleaseBrandingLabel>Preview $(PreReleaseVersionIteration)</PreReleaseBrandingLabel>
