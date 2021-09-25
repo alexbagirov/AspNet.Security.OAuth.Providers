@@ -4,12 +4,8 @@
  * for more information concerning the license and the contributors participating to this project.
  */
 
-using System;
 using System.Security.Claims;
 using System.Security.Cryptography;
-using System.Threading.Tasks;
-using JetBrains.Annotations;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;

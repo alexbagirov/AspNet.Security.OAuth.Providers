@@ -4,15 +4,6 @@
  * for more information concerning the license and the contributors participating to this project.
  */
 
-using System;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.OAuth;
-using Microsoft.Extensions.DependencyInjection;
-using Shouldly;
-using Xunit;
-using Xunit.Abstractions;
 using static AspNet.Security.OAuth.Discord.DiscordAuthenticationConstants;
 
 namespace AspNet.Security.OAuth.Discord

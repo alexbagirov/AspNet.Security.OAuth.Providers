@@ -4,10 +4,7 @@
  * for more information concerning the license and the contributors participating to this project.
  */
 
-using System;
-using System.IO;
 using AspNet.Security.OAuth.Apple;
-using JetBrains.Annotations;
 using Microsoft.Extensions.FileProviders;
 
 namespace Microsoft.Extensions.DependencyInjection

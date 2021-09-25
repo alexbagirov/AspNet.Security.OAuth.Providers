@@ -4,15 +4,11 @@
  * for more information concerning the license and the contributors participating to this project.
  */
 
-using System;
-using System.Security.Claims;
 using System.Text;
 using System.Xml.Linq;
-using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Http;
 using Microsoft.Extensions.Logging;
 

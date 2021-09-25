@@ -4,11 +4,7 @@
  * for more information concerning the license and the contributors participating to this project.
  */
 
-using System;
-using System.Net.Http;
 using AspNet.Security.OAuth.Apple.Internal;
-using JetBrains.Annotations;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;

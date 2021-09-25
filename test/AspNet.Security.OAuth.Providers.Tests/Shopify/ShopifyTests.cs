@@ -5,13 +5,7 @@
  */
 
 using System.Globalization;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
-using Xunit;
-using Xunit.Abstractions;
 
 namespace AspNet.Security.OAuth.Shopify
 {

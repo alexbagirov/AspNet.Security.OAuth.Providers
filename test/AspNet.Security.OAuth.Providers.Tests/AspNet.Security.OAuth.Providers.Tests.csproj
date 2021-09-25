@@ -32,6 +32,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Using Include="Microsoft.Extensions.DependencyInjection" />
+    <Using Include="Shouldly" />
+    <Using Include="System.Security.Claims" />
+    <Using Include="Xunit" />
+    <Using Include="Xunit.Abstractions" />
+  </ItemGroup>
+
+  <ItemGroup>
     <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
       <_Parameter1>SolutionRoot</_Parameter1>
       <_Parameter2>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)../../'))</_Parameter2>

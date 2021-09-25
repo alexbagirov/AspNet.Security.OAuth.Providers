@@ -2,8 +2,6 @@
 // See https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers
 // for more information concerning the license and the contributors participating to this project.
 
-using System;
-using JetBrains.Annotations;
 using Microsoft.Extensions.Options;
 
 namespace AspNet.Security.OAuth.Keycloak

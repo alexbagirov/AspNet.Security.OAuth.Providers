@@ -4,11 +4,6 @@
  * for more information concerning the license and the contributors participating to this project.
  */
 
-using System;
-using System.Threading.Tasks;
-using JetBrains.Annotations;
-using Microsoft.AspNetCore.Authentication.OAuth;
-
 namespace AspNet.Security.OAuth.Apple
 {
     /// <summary>

@@ -4,9 +4,6 @@
  * for more information concerning the license and the contributors participating to this project.
  */
 
-using System;
-using System.Threading.Tasks;
-using JetBrains.Annotations;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;

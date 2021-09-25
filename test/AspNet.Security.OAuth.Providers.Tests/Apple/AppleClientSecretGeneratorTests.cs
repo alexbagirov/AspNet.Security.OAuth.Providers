@@ -4,21 +4,13 @@
  * for more information concerning the license and the contributors participating to this project.
  */
 
-using System;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.JsonWebTokens;
-using Shouldly;
-using Xunit;
-using Xunit.Abstractions;
 
 namespace AspNet.Security.OAuth.Apple
 {
