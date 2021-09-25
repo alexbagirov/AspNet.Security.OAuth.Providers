@@ -79,4 +79,14 @@
     <ProjectCapability Include="DynamicFileNesting" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="JetBrains.Annotations" />
+    <Using Include="Microsoft.AspNetCore.Authentication" />
+    <Using Include="Microsoft.AspNetCore.Authentication.OAuth" />
+  </ItemGroup>
+
 </Project>
