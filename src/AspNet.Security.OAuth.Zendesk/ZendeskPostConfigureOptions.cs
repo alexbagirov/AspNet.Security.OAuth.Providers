@@ -36,7 +36,7 @@ namespace AspNet.Security.OAuth.Zendesk
             {
                 Path = path,
                 Port = -1,
-                Scheme = "https",
+                Scheme = Uri.UriSchemeHttps,
             };
 
             return builder.Uri.ToString();

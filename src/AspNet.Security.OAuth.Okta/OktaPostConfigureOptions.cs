@@ -35,7 +35,7 @@ namespace AspNet.Security.OAuth.Okta
             {
                 Path = path,
                 Port = -1,
-                Scheme = "https",
+                Scheme = Uri.UriSchemeHttps,
             };
 
             return builder.Uri.ToString();
