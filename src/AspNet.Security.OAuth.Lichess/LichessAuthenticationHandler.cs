@@ -77,8 +77,9 @@ namespace AspNet.Security.OAuth.Lichess
             using var response = await Backchannel.SendAsync(request, HttpCompletionOption.ResponseHeadersRead, Context.RequestAborted);
             if (!response.IsSuccessStatusCode)
             {
-                Logger.LogError($"An error occurred while retrieving the {requestInformationType}: the remote server " +
+                Logger.LogError("An error occurred while retrieving the {RequestInformationType}: the remote server " +
                                 "returned a {Status} response with the following payload: {Headers} {Body}.",
+                                /* RequestInformationType */ requestInformationType,
                                 /* Status: */ response.StatusCode,
                                 /* Headers: */ response.Headers.ToString(),
                                 /* Body: */ await response.Content.ReadAsStringAsync(Context.RequestAborted));

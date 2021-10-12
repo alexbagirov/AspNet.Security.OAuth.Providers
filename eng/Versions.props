@@ -7,7 +7,7 @@
     <VersionPrefix>$(MajorVersion).$(MinorVersion).$(PatchVersion)</VersionPrefix>
     <!-- TODO Baseline to 6.0.0 once released -->
     <PackageValidationBaselineVersion>5.0.14</PackageValidationBaselineVersion>
-    <PreReleaseVersionLabel>rc.1</PreReleaseVersionLabel>
+    <PreReleaseVersionLabel>rc.2</PreReleaseVersionLabel>
     <PreReleaseVersionIteration></PreReleaseVersionIteration>
     <PreReleaseBrandingLabel>Preview $(PreReleaseVersionIteration)</PreReleaseBrandingLabel>
     <StabilizePackageVersion Condition="'$(StabilizePackageVersion)' == ''">false</StabilizePackageVersion>

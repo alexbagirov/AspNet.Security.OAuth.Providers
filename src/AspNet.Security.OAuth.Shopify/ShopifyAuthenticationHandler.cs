@@ -96,11 +96,8 @@ namespace AspNet.Security.OAuth.Shopify
         {
             if (!properties.Items.TryGetValue(ShopifyAuthenticationDefaults.ShopNameAuthenticationProperty, out string? shopName))
             {
-                string message =
-                    $"Shopify provider AuthenticationProperties must contain {ShopifyAuthenticationDefaults.ShopNameAuthenticationProperty}.";
-
-                Logger.LogError(message);
-                throw new InvalidOperationException(message);
+                Logger.LogError("Shopify provider AuthenticationProperties must contain ShopNameAuthenticationProperty.");
+                throw new InvalidOperationException("Shopify provider AuthenticationProperties must contain ShopNameAuthenticationProperty.");
             }
 
             string uri = string.Format(CultureInfo.InvariantCulture, Options.AuthorizationEndpoint, shopName);
